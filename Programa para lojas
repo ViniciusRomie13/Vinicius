@@ -1,0 +1,103 @@
+Algoritmo "programaParaLojas"
+
+
+Var
+
+km , frete, taxaFrete , pecas, valorPeca, valorTotal  : real
+quantidade , diaFesta, mesFesta, anoFesta, dia, mes, ano: inteiro
+nome, atendente, loja, mes1Festa, mes1 :caractere
+
+Inicio
+
+Escreva("Digite o nome do operador: ")
+leia (atendente)
+
+loja <-  atendente + " Festas"
+escreva ("Bem-Vindo ", atendente , ", digite o Km: ")
+leia (km)
+
+taxaFrete <- 10
+frete <- km * taxaFrete
+
+escreva ("Digite a quantidade de peças: ")
+leia (quantidade)
+
+pecas <- 7
+valorPeca <- pecas * quantidade
+
+valorTotal <- valorPeca + frete
+
+escreva ("Digite o nome da cliente: ")
+leia (nome)
+escreva ("Digite o dia da Festa: ")
+leia (diaFesta)
+escreva ("Digite o mês da Festa: ")
+leia (mesFesta)
+escreva("Digite o ano da festa: ")
+leia (anoFesta)
+escreva("Digite o dia de Hoje: ")
+leia (dia)
+escreva("Digite o mes atual: ")
+leia (mes)
+escreva("Digite o ano que estamos: ")
+leia (ano)
+
+escolha mesFesta , mes
+caso 1
+ mes1Festa <- "Janeiro"
+ mes1 <- "Janeiro"
+caso 2
+ mes1Festa <- "Fevereiro"
+ mes1 <-"Fevereiro"
+caso 3
+ mes1Festa <- "Março"
+ mes1 <- "Março"
+caso 4
+ mes1Festa <-"Abril"
+ mes1 <- "Abril"
+caso 5
+ mes1Festa <- "Maio"
+ mes1 <- "Maio"
+caso 6
+ mes1Festa <- "Junho"
+ mes1 <- "Junho"
+caso 7
+ mes1Festa <- "Julho"
+ mes1 <- "Julho"
+caso 8
+ mes1Festa <- "Agosto"
+ mes1 <- "Agosto"
+caso 9
+ mes1Festa <- "Setembro"
+ mes1 <- "Setembro"
+caso 10
+ mes1Festa <- "Outubro"
+ mes1 <- "Outubro"
+caso 11
+ mes1Festa <- "Novembro"
+ mes1 <- "Novembro"
+ caso 12
+ mes1Festa <- "Dezembro"
+ mes1 <- "Dezembro"
+fimescolha
+
+escreval
+
+escreval("Dados do Cliente: ")
+escreval("Nome: ", nome)
+escreval("Data da festa: ",diaFesta, " de ", mes1Festa, "de",anoFesta)
+escreval
+escreval("Dados da Loja: ")
+escreval("Nome Da Loja: ", loja)
+escreval("Nome da responsavel: ", atendente)
+escreval(" Data da contratação: ", dia , " de ", mes1 , " de ", ano)
+escreval
+escreval("Valores a pagar:")
+escreval
+escreval("Valor do frete= R$", frete)
+escreval("Valor das peças= R$", valorPeca)
+escreval("Valor Total= R$",valorTotal)
+
+
+
+Fimalgoritmo
